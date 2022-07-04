@@ -33,6 +33,7 @@ public class DogTest {
         String dogName = dog.getName();
         Assert.assertEquals(dogName, givenName);
     }
+
     @Test
     public void testDog() {
         // Given
@@ -53,6 +54,7 @@ public class DogTest {
         Assert.assertEquals(givenBirthDate, retrievedBirthDate);
         Assert.assertEquals(givenId, retrievedId);
     }
+
     @Test
     public void testSpeak() {
         //Given
@@ -62,19 +64,21 @@ public class DogTest {
         //Then
         Assert.assertEquals(whatToSpeak, dog.speak());
     }
+
     @Test
-    public void testBirthday(){
+    public void testBirthday() {
         //Given
         Date givenBirthdate = new Date();
         //When
-        Dog dog = new Dog("", new Date(),15);
+        Dog dog = new Dog("", new Date(), 15);
         //When
-       dog.setBirthDate(givenBirthdate);
+        dog.setBirthDate(givenBirthdate);
         //Then
         Assert.assertEquals(givenBirthdate, dog.getBirthDate());
     }
+
     @Test
-    public void testFood(){
+    public void testFood() {
         //Given
         Integer givenID = 1;
         //When
@@ -84,6 +88,7 @@ public class DogTest {
         //Then
         Assert.assertEquals(givenID, dog.getNumberOfMealsEaten());
     }
+
     @Test
     public void testID() {
         // Given
@@ -98,15 +103,17 @@ public class DogTest {
         // Then
         Assert.assertEquals(givenId, retrievedId);
     }
+
     @Test
-    public void testAnimalInheritance(){
+    public void testAnimalInheritance() {
         //When
         Dog dog = new Dog("", new Date(), 1);
         //Then
         Assert.assertTrue(dog instanceof Animal);
     }
+
     @Test
-    public void testMammalInheritance(){
+    public void testMammalInheritance() {
         //When
         Dog dog = new Dog("", new Date(), 1);
         //Then

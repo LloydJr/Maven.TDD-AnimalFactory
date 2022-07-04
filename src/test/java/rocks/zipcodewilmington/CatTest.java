@@ -41,6 +41,7 @@ public class CatTest {
         Assert.assertEquals(givenBirthDate, retrievedBirthDate);
         Assert.assertEquals(givenId, retrievedId);
     }
+
     @Test
     public void testSpeak() {
         //Given
@@ -50,6 +51,7 @@ public class CatTest {
         //Then
         Assert.assertEquals(whatToSpeak, cat.speak());
     }
+
     @Test
     public void testSetName() {
         //Given
@@ -61,6 +63,7 @@ public class CatTest {
         //Then
         Assert.assertEquals(givenName, actualName);
     }
+
     @Test
     public void testBirthday() {
         // Given
@@ -70,8 +73,10 @@ public class CatTest {
         // When (we retrieve data from the cat)
         cat.setBirthDate(givenBirthDate);
         // Then (we expect the given data, to match the retrieved data)
-        Assert.assertEquals(givenBirthDate, cat.getBirthDate());;
+        Assert.assertEquals(givenBirthDate, cat.getBirthDate());
+        ;
     }
+
     @Test
     public void testID() {
         // Given (cat data)
@@ -83,6 +88,7 @@ public class CatTest {
         // Then (we expect the given data, to match the retrieved data)
         Assert.assertEquals(givenId, retrievedId);
     }
+
     @Test
     public void testAnimalInheritance() {
         // When (a cat is constructed)
@@ -90,6 +96,7 @@ public class CatTest {
         // Then (we expect the given data, to match the retrieved data)
         Assert.assertTrue(cat instanceof Animal);
     }
+
     @Test
     public void testMammalInheritance() {
         // When (a cat is constructed)
@@ -97,6 +104,7 @@ public class CatTest {
         // Then (we expect the given data, to match the retrieved data)
         Assert.assertTrue(cat instanceof Mammal);
     }
+
     @Test
     public void testEat() {
         // Given (cat data)
