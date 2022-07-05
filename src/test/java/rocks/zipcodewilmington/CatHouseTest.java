@@ -19,7 +19,7 @@ public class CatHouseTest {
     @Test
     public void testAddCat(){
         //Given
-        Integer actualCatNum = 1;
+        Integer actualCatNum = 2;
         //When
         CatHouse.add(new Cat("", new Date(), actualCatNum));
         //When

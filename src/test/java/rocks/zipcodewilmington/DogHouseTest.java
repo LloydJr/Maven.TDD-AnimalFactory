@@ -37,7 +37,7 @@ public class DogHouseTest {
     @Test
     public void testAddDog(){
         //Given
-        Integer actualDogNum = 1;
+        Integer actualDogNum = 3;
         //When
         DogHouse.add(new Dog("", new Date(), actualDogNum));
         //When
